@@ -1,0 +1,51 @@
+[
+  {
+    "productID": "1",
+    "name": "GIGABYTE nVidia GeForce GT 730 2GB GDDR5 64bit - GV-N730D5-2GL",
+    "type": "nVidia",
+    "price": "100",
+    "img": "assets\\img\\product\\gpu1.png"
+  },
+  {
+    "productID": "2",
+    "name": "POWERCOLOR Radeon RX 550 4GB GDDR5 128-bit - AXRX 550 4GBD5-DH",
+    "type": "AMD",
+    "price": "190",
+    "img": "assets\\img\\product\\gpu2.png"
+  },
+  {
+    "productID": "3",
+    "name": "MSI Radeon RX 550 2GT LP OC",
+    "type": "AMD",
+    "price": "120",
+    "img": "assets\\img\\product\\gpu3.png"
+  },
+  {
+    "productID": "4",
+    "name": "ASUS Phoenix Radeon 550 2GB GDDR5 64-bit - PH-550-2G",
+    "type": "AMD",
+    "price": "110",
+    "img": "assets\\img\\product\\gpu4.png"
+  },
+  {
+    "productID": "5",
+    "name": "GIGABYTE GeForce GTX 1650 D6 WINDFORCE OC 4GB GDDR6 128-bit (rev. 2.0) - GV-N1656WF2OC-4GD",
+    "type": "nVidia",
+    "price": "280",
+    "img": "assets\\img\\product\\gpu5.png"
+  },
+  {
+    "productID": "6",
+    "name": "GIGABYTE nVidia GeForce GTX 1050Ti 4GB GDDR5 128bit - GV-N105TOC-4GD",
+    "type": "nVidia",
+    "price": "250",
+    "img": "assets\\img\\product\\gpu6.png"
+  },
+  {
+    "productID": "7",
+    "name": "GIGABYTE GeForce GTX 1050Ti OC Low Profile 4GB - GV-N105TOC-4GL",
+    "type": "nVidia",
+    "price": "240",
+    "img": "assets\\img\\product\\gpu7.png"
+  }
+]
