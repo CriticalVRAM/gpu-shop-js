@@ -26,7 +26,7 @@ if (document.querySelector("#footer")) {
         <hr class="mt-5">
         <div class="gridCenter">
         <a href="sitemap.txt">Sitemap</a>
-        <a download="" href="docs.pdf">Docs</a>
+        <a download="" href="wp2-docs.pdf">Docs</a>
         <a href="author.html">Author</a>
         </div>
         `
