@@ -39,7 +39,6 @@ $.ajax({
 })
 
 function handleError(error) {
-  console.log(error)
   const errMarkup = `
   <h2 class="text-danger mt-5">Sorry! Our servers seem to be down at the moment. Try again later.</h2>
   <p class="small">${error.responseText}</p>
@@ -59,7 +58,7 @@ function renderProduct() {
 //* Filter Functions
 function searchFilter(data) {
   const searchValue = document.querySelector("#search").value.toUpperCase()
-  return data.filter(item => item.name.includes(searchValue))
+  return data.filter(item => item.name.toUpperCase().includes(searchValue))
 }
 function orderSort(data) {
   const sortIndex = document.querySelector("#sort").selectedIndex
@@ -97,8 +96,21 @@ function genProductMarkup(data) {
 }
 
 function addToCart() {
-  console.log(this)
-  // show message when item added to cart on top of page
+  const root = document.querySelector("#msg")
+
+  const addedProduct = productData.find(product => product.productID == this.id)
+
+  root.innerHTML = `Item: <b>${addedProduct.name}</b> - added to cart.`
+  root.classList.add("bg-success")
+  window.scrollTo(0, 0)
+
+  if (localStorage) {
+    const addedProductID = addedProduct.productID
+    const itemQuantity = localStorage.getItem(addedProductID)
+    if (!itemQuantity) {
+      localStorage.setItem(addedProductID, 1)
+    } else localStorage.setItem(addedProductID, parseInt(itemQuantity, 10) + 1)
+  } else alert("Sorry! Local Storage is disabled and the cart cannot work.")
 }
 
 //* Event Listeners

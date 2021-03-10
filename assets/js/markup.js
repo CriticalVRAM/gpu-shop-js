@@ -9,6 +9,9 @@ if (document.querySelector("#nav")) {
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                  </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
     
@@ -22,9 +25,9 @@ if (document.querySelector("#footer")) {
   let footerMarkup = `
         <hr class="mt-5">
         <div class="gridCenter">
-            <a href="author.html">Author</a>
-            <a download="" href="docs.pdf">Docs</a>
-            <a href="sitemap.txt">Sitemap</a>
+        <a href="sitemap.txt">Sitemap</a>
+        <a download="" href="docs.pdf">Docs</a>
+        <a href="author.html">Author</a>
         </div>
         `
   document.querySelector("#footer").innerHTML = footerMarkup

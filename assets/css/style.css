@@ -48,3 +48,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
+#empty {
+  grid-column: 2;
+}

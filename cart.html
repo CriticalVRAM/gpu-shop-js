@@ -26,21 +26,29 @@
 
   <body>
     <div id="nav" class="navbar-expand"></div>
-    <h1 class="mb-4">Contact</h1>
-    <p id="msg"></p>
-    <form id="form" class="form gridCenter" action="contact.php" method="post">
-      <input name="email" id="email" placeholder="Email:" />
-      <textarea
-        name="text"
-        id="text"
-        cols="30"
-        rows="7"
-        placeholder="Enter message here (max 200):"
-      ></textarea>
-      <button class="btn btn-primary" type="submit">Send Message</button>
-    </form>
+    <h1 class="mb-4">Cart</h1>
+    <main id="main">
+      <section class="products container">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="assets\img\product\gpu1.png"
+            alt="item1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              GIGABYTE nVidia GeForce GT 730 2GB GDDR5 64bit - GV-N730D5-2GL
+            </h5>
+            <p class="card-text">100$</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </section>
+      <button id="clear" class="btn btn-danger mt-5">Empty cart</button>
+    </main>
     <footer id="footer"></footer>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/cart.js"></script>
     <script src="./assets/js/markup.js"></script>
-    <script src="./assets/js/contact.js"></script>
   </body>
 </html>
